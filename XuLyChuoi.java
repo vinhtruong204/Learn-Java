@@ -22,8 +22,8 @@ public class XuLyChuoi {
             System.out.println("Ki tu tai vi tri " + (i + 1) + " la: " + getChars[i]);
         // Method getBytes()
         byte[] getBytes = s.getBytes();
-        for (byte x : getBytes)
+        for (byte x : getBytes){
             System.out.println(x);
-
+        }
     }
 }
