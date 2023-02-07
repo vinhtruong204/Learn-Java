@@ -25,11 +25,21 @@ public class XuLyChuoi2 {
         String e = "nguyen van c";
         System.out.println("Method compareToIgnoreCase(): ");
         System.out.println("c compareTo e: " + c.compareToIgnoreCase(e) + " equals");
-        // Method regionMatches => so sánh một đoạn
+        // Method regionMatches() => so sánh một đoạn
         String r1 = "Vinh.vn";
-        String r2 = "nh.v";
+        String r2 = "Nh.v";
         System.out.println("Method regionMatches(): ");
-        Boolean check = r1.regionMatches(2, r2, 0, 4);
+        Boolean check = r1.regionMatches(false, 2, r2, 0, 4);
         System.out.println("r1 regionMatches r2: " + check);
+        // Method startsWith() => So sánh đoạn bắt đầu của chuỗi
+        String sdt1 = "0358473659";
+        String sdt2 = "0958473658";
+        System.out.println("Method startsWith(): ");
+        System.out.println("sdt1 startsWith(): " + sdt1.startsWith("03"));
+        System.out.println("sdt2 startsWith(): " + sdt2.startsWith("03"));
+        // Method endsWith() => So sánh đoạn kết thúc của chuỗi
+        System.out.println("Method endWith(): ");
+        System.out.println("sdt1 endsWith(): " + sdt1.endsWith("59"));
+        System.out.println("sdt2 endsWith(): " + sdt2.endsWith("59"));
     }
 }
